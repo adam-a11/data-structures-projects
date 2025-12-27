@@ -52,7 +52,7 @@ public class Converter {
                         && (precedence(ops.top()) > precedence(token)
                            || (precedence(ops.top()) == precedence(token) && !isRightAssociative(token)))) {
                     out.append(ops.pop()).append(" ");
-                } // ✅ this brace was missing in your file
+                } 
 
                 ops.push(token);
             }
